@@ -14,9 +14,11 @@
 * 1.使用`@Aspect`修饰要切入的类
 * 2.使用` @Pointcut("execution(@com.lifecycle.singleclickaspect.singleclick.annotation.SingleClick * *(..))")`修饰切点，同常这个切点是个自定义注解，路径根据实际情况修改
 * 3.使用`@Around、@Before、@After`修饰切面的方法
-关键字|说明
-Aspect|声明一个AOP容器
-Pointcut|声明一个切入点
-Before|在函数主体执行之前插入代码
-After|在函数主体执行之后插入代码
-Around|将函数主体包裹起来，在函数主体前、后插入代码
+
+关键字 | 说明
+:-: | :-:
+Aspect | 声明一个AOP容器
+Pointcut | 声明一个切入点
+Before | 在函数主体执行之前插入代码
+After | 在函数主体执行之后插入代码
+Around | 将函数主体包裹起来，在函数主体前、后插入代码
