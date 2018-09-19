@@ -22,3 +22,16 @@ Pointcut | 声明一个切入点
 Before | 在函数主体执行之前插入代码
 After | 在函数主体执行之后插入代码
 Around | 将函数主体包裹起来，在函数主体前、后插入代码
+
+## 通过使用注解修饰添加切点
+
+### 注解的简单介绍
+
+注解分为：标准注解和元注解
+* 标准注解： java中自带的四个注解`@override @Deprecated @Suppresswarnning @SafeVargs`
+* 元注解： 用来实现自定义的五个注解，常用的两个`@Target`修饰类型 `@Retention`修饰注解的保留策略
+** Retention 中的三种保留策略
+*** Source 编辑中可以查看
+*** Class 保留到编译期
+*** Runtime 保留到运行期
+自定义注解使用`@Interface`修饰
